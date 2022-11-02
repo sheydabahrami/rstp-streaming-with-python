@@ -28,7 +28,7 @@ class MainApp(App):
         top_layout = BoxLayout(orientation = 'horizontal')
 
         self.image = Image()
-        top_layout.add_widget(self.image) # iamge added to top layout
+        top_layout.add_widget(self.image) # image added to top layout
 
         grid_layout = GridLayout()
         grid_layout.rows = 1
