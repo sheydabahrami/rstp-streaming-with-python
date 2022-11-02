@@ -1,0 +1,36 @@
+
+BoxLayout:
+
+    orientation: 'vertical' 
+    BoxLayout:
+        orientation: 'horizontal'
+
+        Image:
+            id:image
+            
+    
+
+    GridLayout:
+        rows: 1
+        cols: 3
+        size_hint_y: 0.06
+
+
+        TextInput:
+            id: txtaddress
+            hint_text: 'Enter IP address or RTSP stream address'
+            size_hint_x: 4
+            
+
+        Button:
+            text: 'Start'
+            background_color: [0, 1, 0, 1]
+            font_size: 30 
+            on_press: app.streaming_video()
+            
+
+        Button: 
+            text: 'Close'
+            background_color: [1, 0, 0, 1]
+            font_size: 30
+            on_press: app.close_streaming()
